@@ -5,11 +5,12 @@ html    {
             text-align: justify;
 }
 
-body    {background: teal;}
-h1      {font-weight: bold;}
-h2      {color: orange;}
+body    {background: #f9f8f9;}
+h1      {color: black;}
+h2      {color: navy;}
 h3      {color: aqua;}
-p       {color:orange}
+h4      {color: orangered;}
+h5      {color:teal}
 
 
 /* The sidebar menu */
