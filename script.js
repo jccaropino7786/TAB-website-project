@@ -8,4 +8,4 @@ h2.textContent = `John Curtis aka "JC" Caropino has been working since the age o
 
 document.querySelector("body").appendChild(h2);
 
-//Timer countdown to class start
+
