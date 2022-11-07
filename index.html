@@ -7,7 +7,27 @@
     </head>
 
     <body>
-        <h1>A New Adventure!</h1>
+        <h1>A New Adventure is about to begin!</h1>
+            <!--Below is the timer on the page to the start of the cohort Nov 21 2022-->
+                <h4><p id="timer"></p></h4>
+                <script>
+                    var countDownDate = new Date ("Nov 21, 2022 00:00:00").getTime();
+                    var x = setInterval(function() {
+                        var now = new Date().getTime();
+                        var distance = countDownDate - now;
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("timer").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s"
+                            if (distance < 0 ) {
+                                clearInterval(x);
+                                document.getElementById("timer").inner.HTML = "Onward and Upward";
+                            }
+                    }, 1000);
+                </script>
+            <!--End of Timer-->
             <p>
                 <img src="https://i.imgur.com/VQSFTdP.jpg" alt="My Photo" width="200px">
             </p>
