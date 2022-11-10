@@ -7,45 +7,48 @@
     </head>
 
     <body>
+        <div id = "header">
         <h1>A New Adventure is about to begin!</h1>
-            <!--Below is the timer on the page to the start of the cohort Nov 21 2022-->
-                <h4><p id="timer"></p></h4>
-                <script>
-                    var countDownDate = new Date ("Nov 21, 2022 00:00:00").getTime();
-                    var x = setInterval(function() {
-                        var now = new Date().getTime();
-                        var distance = countDownDate - now;
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <!--Below is the timer on the page to the start of the cohort Nov 21 2022-->
+        <h2><p id="timer"></p></h2>
+        <script>
+            var countDownDate = new Date ("Nov 21, 2022 00:00:00").getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                        document.getElementById("timer").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s"
-                            if (distance < 0 ) {
-                                clearInterval(x);
-                                document.getElementById("timer").inner.HTML = "Onward and Upward";
-                            }
-                    }, 1000);
-                </script>
-            <!--End of Timer-->
-            <p>
-                <img src="https://i.imgur.com/VQSFTdP.jpg" alt="My Photo" width="200px">
-            </p>
-            <p>
-                <script src='script.js'></script>
-            </p>
-            <p> <h1>Skills</h1>
-                <ol><h2>
+                document.getElementById("timer").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s"
+                    if (distance < 0 ) {
+                        clearInterval(x);
+                        document.getElementById("timer").inner.HTML = "Onward and Upward";
+                    }
+            }, 1000);
+        </script>
+    <!--End of Timer-->
+        </div>
+
+        <div id = "mainContent">
+            
+            <img src="https://i.imgur.com/VQSFTdP.jpg" alt="My Photo" width="200px">
+            
+            <script src='script.js'></script>
+
+            <p>Skills</p>
+                <ol><h5>
                     <li>Creating Yearly, Monthly, and Weekly Goals.</li>
                     <li>Publication Layout.</li>
                     <li>Basic Graphic Design</li>
                     <li>Coordinating Community Groups and Volunteers.</li>
                     <li>Proofreading & Word Smithing Press Releases and Agendas.</li>
                     <li>Prepare and Execute Trainings.</li>
-                </h2>
+                </h5>
                 </ol>
-            </p>
-        <div>
+            
+            
             <ul>
                 <h1><li>h1</li></h1>
                 <h2><li>h2</li></h2>
@@ -54,9 +57,16 @@
                 <h5><li>h5</li></h5>
                 <h6><li>h6</li></h6>     
             </ul>
+            
+
         </div>
-        <div class="sidebar">
-            <a href="#">LinkedIn</a>
+        
+        <div id = "links">
+            <h1>linkedIn</h1>
+        </div>
+
+        <div id ="footer">
+           <h1> Hello World</h1>
         </div>
     </body>
 </html>
