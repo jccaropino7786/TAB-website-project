@@ -1,6 +1,4 @@
-#html{
-  background-color: whitesmoke;
-}
+
 #header {
   background-color: lightblue;
   border: 3px black solid;
@@ -9,7 +7,11 @@
 }
 
 #mainContent {
-  background-color: whitesmoke;
+  background-color: white;
+  margin-top: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0%;
   align-content: center;
   padding: 25px;
   text-align: justify;
@@ -25,6 +27,7 @@
 #footer {
   background-color: navy;
   border: 3px black solid;
+  text-align: center;
 }
 
 h1      {color: black;}
@@ -34,7 +37,18 @@ h4      {color: orangered;}
 h5      {color: teal}
 h6      {color: pink}
 
-
-
-
-  
+ul.nav {
+  padding-left: 0px;
+  text-align: center;
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+ul.nav > li:hover{
+  background-color: navy;
+}
+ul.nav > li > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
