@@ -32,12 +32,23 @@
                     <input type="text" name="q"></input>
                     <input type="submit"></input>
                 </form>
+                
                 <script>
                 const form = document.querySelector('form')
                 form.addEventListener("submit", (e) => {
                     console.log(form.q)
                 })
                 </script>
+
+                <label for=”form-language”>Language</label>
+                <select name=”language”
+                id=”form-language”>
+                    <option value=””>Select a language</option> //will be default
+                    <option value=””>JavaScript</option>
+                    <option value=””>Ruby</option>
+                    <option value=””>Python</option>
+                <select>
+
                 
             </p>
 
