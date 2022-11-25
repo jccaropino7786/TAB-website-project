@@ -9,26 +9,6 @@
     <body>
         <div id = "header">
         <h1>A New Adventure is about to begin!</h1>
-        <!--Below is the timer on the page to the start of the cohort Nov 21 2022-->
-        <h2><p id="timer"></p></h2>
-        <script>
-            var countDownDate = new Date ("Nov 21, 2022 00:00:00").getTime();
-            var x = setInterval(function() {
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("timer").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s"
-                    if (distance < 0 ) {
-                        clearInterval(x);
-                        document.getElementById("timer").inner.HTML = "Onward and Upward";
-                    }
-            }, 1000);
-        </script>
-    <!--End of Timer-->
         </div>
 
         <div id = "mainContent">
@@ -38,6 +18,18 @@
             <script src='script.js'></script>
 
             <p>Skills</p>
+            <p>
+                <button id="clickme" style="padding: 1.5rem 2rem; font-size: 2rem;">Click Me</button>
+                <script>
+                    function handelClick(){
+                        alert('Thanks! ;) ');
+                    }
+                    const button = document.getElementById('clickme');
+                    button.addEventListener('click', handelClick)
+                </script>
+                
+            </p>
+
                 <ol><h5>
                     <li>Creating Yearly, Monthly, and Weekly Goals.</li>
                     <li>Publication Layout.</li>
