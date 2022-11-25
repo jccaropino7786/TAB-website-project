@@ -28,6 +28,17 @@
                     button.addEventListener('click', handelClick)
                 </script>
                 
+                <form>
+                    <input type="text" name="q"></input>
+                    <input type="submit"></input>
+                </form>
+                <script>
+                const form = document.querySelector('form')
+                form.addEventListener("submit", (e) => {
+                    console.log(form.q)
+                })
+                </script>
+                
             </p>
 
                 <ol><h5>
