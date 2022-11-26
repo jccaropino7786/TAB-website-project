@@ -9,3 +9,6 @@ h2.textContent = `John Curtis aka "JC" Caropino has been working since the age o
 document.querySelector("#mainContent").appendChild(h2);
 
 
+const ul = document.createElement("ul");
+const header = document.querySelector("#header");
+header.append(ul)
