@@ -1,0 +1,13 @@
+{
+  "drinks": [
+    {
+        "id": 0,
+        "name": "Margarita",
+        "strInstruction": "a then b then c",
+        "imageUrl": "",
+        "strIngredient": [
+            "a","b","c"
+        ]
+    }
+ ]
+}
